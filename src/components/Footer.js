@@ -71,8 +71,8 @@ const Footer = styled.div`
 `
 
 const Button = styled.div`
-    width: calc(24px + 2.6vmin);
-    height: calc(24px + 2.6vmin);
+    width: calc(96px + 10.4vmin);
+    height: calc(96px + 10.4vmin);
     background: var(--main-grey-light);
     border-radius: 100%;
     margin: 0 1.5vw;

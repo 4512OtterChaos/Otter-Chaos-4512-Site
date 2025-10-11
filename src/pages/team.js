@@ -1,5 +1,6 @@
 import React from "react"
-import ReactTooltip from "react-tooltip"
+import { Tooltip } from "react-tooltip"
+import "react-tooltip/dist/react-tooltip.css"
 import styled, { keyframes } from "styled-components"
 
 import Layout from "../components/layout"
@@ -28,7 +29,8 @@ const TeamPage = () => (
 			<Button
 				href="https://forms.gle/6mjonUx4DkYvzNPz6"
 				target="_blank"
-				data-tip="A survey that will help students find which sub-team they are interested in"
+				data-tooltip-id="team-interest"
+				data-tooltip-content="A survey that will help students find which sub-team they are interested in"
 			>
 				Interest Survey
 			</Button>
@@ -39,11 +41,13 @@ const TeamPage = () => (
 			<Button
 				href="https://forms.gle/mJcZsJMmQUjECLyV9"
 				target="_blank"
-				data-tip='For CHS students interested in joining'
+				data-tooltip-id="team-registration"
+				data-tooltip-content="For CHS students interested in joining"
 			>
 				Student Registration Form
 			</Button>
-			<ReactTooltip place="top" type="warning" effect="solid" />
+			<Tooltip id="team-interest" place="top" />
+			<Tooltip id="team-registration" place="top" />
 		</Links>
 	</TitleSpan>
 	

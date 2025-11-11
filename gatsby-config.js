@@ -4,6 +4,9 @@ module.exports = {
     description: `Learning and striving for better STEAM through high school robotics.`,
     author: `@otterchaos4512`,
   },
+  flags: {
+    DEV_SSR: true,
+  },
   plugins: [
     `gatsby-plugin-react-helmet`,
     {

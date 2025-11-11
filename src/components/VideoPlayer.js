@@ -1,15 +1,15 @@
 import React from "react"
 import ReactPlayer from "react-player"
 
-const defaultConfig = {
-  youtube: {
-    origin: window.location.origin,
-    enablejsapi: 0,
-  },
-}
+const VideoPlayer = (props) => {
+  const config = {
+    youtube: {
+      origin: typeof window !== "undefined" ? window.location.origin : undefined,
+      enablejsapi: 0,
+    },
+  }
 
-const VideoPlayer = (props) => (
-  <ReactPlayer config={defaultConfig} controls {...props} />
-)
+  return <ReactPlayer config={config} controls {...props} />
+}
 
 export default VideoPlayer

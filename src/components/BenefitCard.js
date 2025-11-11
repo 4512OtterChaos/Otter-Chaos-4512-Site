@@ -34,7 +34,7 @@ const Card = styled.div`
     position: relative;
     margin-top: -10%;
 
-    @media (max-width: 1124px){
+    @media (max-width: 1124px) {
       height: 3vmin;
     }
   }

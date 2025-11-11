@@ -11,76 +11,76 @@ import Card from "../components/TeamCard"
 import Footer from "../components/Footer"
 
 const TeamPage = () => (
-	<Layout>
-	{/* SEO */}
-	<SEO title="Team" />
-	
-	{/* Header */}
-	<Header />
-	
-	{/* Hero */}
-	<TitleSpan>
-		<span>
-			<h1>Team</h1>
-			<p>Meet the crew!</p>
-		</span>
-		<Links>
-			<h2>Links</h2>
-			<Button
-				href="https://forms.gle/6mjonUx4DkYvzNPz6"
-				target="_blank"
-				data-tooltip-id="team-interest"
-				data-tooltip-content="A survey that will help students find which sub-team they are interested in"
-			>
-				Interest Survey
-			</Button>
+  <Layout>
+    {/* SEO */}
+    <SEO title="Team" />
 
-			<br/>
-			<br/>
-			<br/>
-			<Button
-				href="https://forms.gle/mJcZsJMmQUjECLyV9"
-				target="_blank"
-				data-tooltip-id="team-registration"
-				data-tooltip-content="For CHS students interested in joining"
-			>
-				Student Registration Form
-			</Button>
-			<Tooltip id="team-interest" place="top" />
-			<Tooltip id="team-registration" place="top" />
-		</Links>
-	</TitleSpan>
-	
-	{/* Coaches */}
-	<TitledCard>
-		<TextContainer
-			title="Coaches"
-			paragraph="Our coaches allow us to do our job as students and members of the robotics club."
-		/>
+    {/* Header */}
+    <Header />
 
-		<CardContainer>
-			<Card name="Neil Palachuk" title="Head Coach" />
-			<Card name="Stephen Knoefler" title="Assistant Coach" />
-		</CardContainer>
-	</TitledCard>
-	
-	{/* Mentors */}
-	<TitledCard>
-		<TextContainer
-			title="Mentors"
-			paragraph="Our mentors provide knowledge from the industry and help guide student learning."
-		/>
+    {/* Hero */}
+    <TitleSpan>
+      <span>
+        <h1>Team</h1>
+        <p>Meet the crew!</p>
+      </span>
+      <Links>
+        <h2>Links</h2>
+        <Button
+          href="https://forms.gle/6mjonUx4DkYvzNPz6"
+          target="_blank"
+          data-tooltip-id="team-interest"
+          data-tooltip-content="A survey that will help students find which sub-team they are interested in"
+        >
+          Interest Survey
+        </Button>
 
-		<CardContainer>
-			<Card name="Nolan Brown" title="Programming" />
-			<Card name="Lissette Wilhelm" />
-			<Card name="David Vanderveen" /> 
-		</CardContainer>
-	</TitledCard>
-	
-	{/* Footer */}
-	<Footer />
-	</Layout>
+        <br />
+        <br />
+        <br />
+        <Button
+          href="https://forms.gle/mJcZsJMmQUjECLyV9"
+          target="_blank"
+          data-tooltip-id="team-registration"
+          data-tooltip-content="For CHS students interested in joining"
+        >
+          Student Registration Form
+        </Button>
+        <Tooltip id="team-interest" place="top" />
+        <Tooltip id="team-registration" place="top" />
+      </Links>
+    </TitleSpan>
+
+    {/* Coaches */}
+    <TitledCard>
+      <TextContainer
+        title="Coaches"
+        paragraph="Our coaches allow us to do our job as students and members of the robotics club."
+      />
+
+      <CardContainer>
+        <Card name="Neil Palachuk" title="Head Coach" />
+        <Card name="Stephen Knoefler" title="Assistant Coach" />
+      </CardContainer>
+    </TitledCard>
+
+    {/* Mentors */}
+    <TitledCard>
+      <TextContainer
+        title="Mentors"
+        paragraph="Our mentors provide knowledge from the industry and help guide student learning."
+      />
+
+      <CardContainer>
+        <Card name="Nolan Brown" title="Programming" />
+        <Card name="Lissette Wilhelm" />
+        <Card name="David Vanderveen" />
+      </CardContainer>
+    </TitledCard>
+
+    {/* Footer */}
+    <Footer />
+  </Layout>
 )
 
 export default TeamPage
@@ -97,61 +97,60 @@ const EnterAnimation = keyframes`
 	}
 `
 const TitleSpan = styled.div`
-	margin: 10vmin 25% 10vmin 25%;
-	text-align: center;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-	animation: ${EnterAnimation} 3s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
+  margin: 10vmin 25% 10vmin 25%;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  animation: ${EnterAnimation} 3s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
 
-	h1 {
-		margin: 0.25em auto;
-		animation: ${EnterAnimation} 1s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
-	}
+  h1 {
+    margin: 0.25em auto;
+    animation: ${EnterAnimation} 1s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
+  }
 
-	p {
-		max-width: 700px;
-		margin: 0 auto;
-		animation: ${EnterAnimation} 3s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
-	}
+  p {
+    max-width: 700px;
+    margin: 0 auto;
+    animation: ${EnterAnimation} 3s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
+  }
 
-	@media (max-width: 1300px) {
-		margin: 8vmin 15% 8vmin 20%;
-		grid-template-columns: repeat(3, 1fr);
-	}
+  @media (max-width: 1300px) {
+    margin: 8vmin 15% 8vmin 20%;
+    grid-template-columns: repeat(3, 1fr);
+  }
 `
 
 const CardContainer = styled.div`
-	margin: 1vh auto 2vh;
-	max-width: 50%;
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+  margin: 1vh auto 2vh;
+  max-width: 50%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 
-	@media (max-width: 1400px) {
-		max-width: 70%;
-	}
+  @media (max-width: 1400px) {
+    max-width: 70%;
+  }
 `
 const TitledCard = styled.div`
-	opacity: 0;
-	margin: 1vh auto 2vh;
-	animation: ${EnterAnimation} 3s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
-	animation-delay: 0.85s;
+  opacity: 0;
+  margin: 1vh auto 2vh;
+  animation: ${EnterAnimation} 3s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
+  animation-delay: 0.85s;
 `
 
 const Button = styled.a`
-	border-radius: 4px;
-	font-size: 2.17vmin;
-	background: var(--main-blue-dark);
-	font-weight: 700;
-	padding: calc(3px + .75vmin) calc(9px + .9vmin);
-	color: white;
+  border-radius: 4px;
+  font-size: 2.17vmin;
+  background: var(--main-blue-dark);
+  font-weight: 700;
+  padding: calc(3px + 0.75vmin) calc(9px + 0.9vmin);
+  color: white;
 `
 
 const Links = styled.div`
-	opacity: 0;
-	//margin: 0 auto 0 18vw;
-	animation: ${EnterAnimation} 3s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
-	animation-delay: 0.5s;
+  opacity: 0;
+  //margin: 0 auto 0 18vw;
+  animation: ${EnterAnimation} 3s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
+  animation-delay: 0.5s;
 `
-	

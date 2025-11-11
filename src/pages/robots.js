@@ -1,6 +1,6 @@
 import React from "react"
 import styled, { keyframes } from "styled-components"
-import ReactPlayer from "react-player"
+import VideoPlayer from "../components/VideoPlayer"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -47,7 +47,7 @@ const RobotsPage = () => (
       <RobotImages>
         <img src={Riptide} alt="Robot Front View" />
         <VideoContainer>
-          <ReactPlayer
+          <VideoPlayer
             src="https://youtu.be/mPWVxLnCw0A"
             controls={true}
             width="100%"

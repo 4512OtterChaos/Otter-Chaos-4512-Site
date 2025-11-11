@@ -1,6 +1,6 @@
 import React from "react"
 import styled, { keyframes } from "styled-components"
-import ReactPlayer from "react-player"
+import VideoPlayer from "../components/VideoPlayer"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -56,7 +56,7 @@ const IndexPage = () => (
         paragraph="We strive for learning and improving STEM through our students by building robots! We are comprised of students from Cascade High School."
       />
       <VideoContainer>
-        <ReactPlayer
+        <VideoPlayer
           src="https://www.youtube-nocookie.com/embed/LCvg0CeXCv4A"
           controls={true}
           width="100%"

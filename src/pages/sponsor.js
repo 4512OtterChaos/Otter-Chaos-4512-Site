@@ -1,6 +1,6 @@
 import React from "react"
 import styled, { keyframes } from "styled-components"
-import ReactPlayer from "react-player"
+import VideoPlayer from "../components/VideoPlayer"
 import { Tooltip } from "react-tooltip"
 import "react-tooltip/dist/react-tooltip.css"
 
@@ -55,7 +55,7 @@ const SponsorPage = () => (
       />
 
       <VideoContainer>
-        <ReactPlayer
+        <VideoPlayer
           src="https://www.youtube-nocookie.com/embed/6R0nl--VB6g"
           controls={true}
           width="100%"

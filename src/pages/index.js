@@ -57,7 +57,7 @@ const IndexPage = () => (
       />
       <VideoContainer>
         <ReactPlayer
-          src="https://www.youtube.com/watch?v=LCvg0CeXCv4A"
+          src="https://www.youtube-nocookie.com/embed/LCvg0CeXCv4A"
           controls={true}
           width="100%"
           height="54vmin"

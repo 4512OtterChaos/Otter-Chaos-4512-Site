@@ -56,7 +56,7 @@ const SponsorPage = () => (
 
       <VideoContainer>
         <ReactPlayer
-          src="https://www.youtube.com/watch?v=6R0nl--VB6g"
+          src="https://www.youtube-nocookie.com/embed/6R0nl--VB6g"
           controls={true}
           width="100%"
           height="54vmin"

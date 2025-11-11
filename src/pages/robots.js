@@ -29,7 +29,7 @@ const RobotsPage = () => (
       <h1>Robots</h1>
       <p>
         Check out what we're up to on
-        <a href="https://www.youtube.com/user/Bearbots"> youtube</a>, and see
+        <a href="https://www.youtube.com/@OtterChaos/featured"> youtube</a>, and see
         our robot code on
         <a href="https://github.com/4512OtterChaos"> github</a>.
       </p>
@@ -48,7 +48,8 @@ const RobotsPage = () => (
         <img src={Riptide} alt="Robot Front View" />
         <VideoContainer>
           <ReactPlayer
-            url="https://youtu.be/mPWVxLnCw0A"
+            src="https://youtu.be/mPWVxLnCw0A"
+            controls={true}
             width="100%"
             height="100%"
           />
@@ -136,18 +137,20 @@ const RobotImages = styled.div`
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  gap: 2em;
 
   img {
-    width: calc(20% + 10vmin);
+    flex: 1 1 0;
+    width: 100%;
   }
 
-  @media (max-width: 1320px) {
+  @media (max-width: 900px) {
+    flex-direction: column;
     max-width: 85%;
   }
 `
 
 const VideoContainer = styled.div`
-  margin: auto 2%;
-  width: calc(20% + 10vmin);
-  height: calc(20vmin);
+  flex: 1 1 0;
+  min-width: 0;
 `

@@ -22,7 +22,7 @@ const Header = () => {
           </Button>
         </a>
         <a
-          href="https://www.youtube.com/user/Bearbots"
+          href="https://www.youtube.com/@OtterChaos/featured"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -67,24 +67,31 @@ const EnterAnimation = keyframes`
 
 const Footer = styled.div`
   opacity: 0;
-  margin: 21.6vmin auto 8vmin;
+  margin: 15em auto 5em;
   display: flex;
-  max-width: calc(4 * calc(24px + 2.6vmin + 3vw));
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2em;
   animation: ${EnterAnimation} 3s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
   animation-delay: 0.25s;
 `
 
 const Button = styled.div`
-  width: calc(96px + 10.4vmin);
-  height: calc(96px + 10.4vmin);
+  width: 6em;
+  height: 6em;
   background: var(--main-grey-light);
-  border-radius: 100%;
-  margin: 0 1.5vw;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+  }
 
   img {
-    display: block;
-    margin: 0 auto;
     width: 50%;
-    height: 95%;
   }
 `

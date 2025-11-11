@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import Layout from "./layout"
 import { Link } from "gatsby"
+import Logo from "../images/logos/logo.svg"
 
 const Header = () => {
   return (
@@ -9,10 +10,7 @@ const Header = () => {
       <Heading>
         <Container>
           <Link to="/">
-            <img
-              src={require("../images/logos/logo.svg")}
-              alt="Otter Chaos Logo"
-            />
+            <img src={Logo} alt="Otter Chaos Logo" />
           </Link>
           <Link to="/robots">Robots</Link>
           <Link to="/sponsor">Sponsor</Link>

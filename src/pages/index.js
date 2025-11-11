@@ -13,6 +13,7 @@ import SponsorBox from "../images/logos/sponsor-tiers.png"
 import ForeWave from "../images/logos/WaveFront.png"
 import MidWave from "../images/logos/WaveMid.png"
 import BackWave from "../images/logos/WaveBack.png"
+import ChevronDownIcon from "../images/icons/chevron-down.svg"
 
 const IndexPage = () => (
   <Layout>
@@ -44,10 +45,7 @@ const IndexPage = () => (
     </Ocean>
 
     <DownChevron>
-      <img
-        src={require("../images/icons/chevron-down.svg")}
-        alt="Down Chevron"
-      />
+      <img src={ChevronDownIcon} alt="Down Chevron" />
     </DownChevron>
 
     {/* About */}
@@ -59,7 +57,8 @@ const IndexPage = () => (
       />
       <VideoContainer>
         <ReactPlayer
-          url="https://www.youtube.com/watch?v=LCvg0CeXCv4A"
+          src="https://www.youtube.com/watch?v=LCvg0CeXCv4A"
+          controls={true}
           width="100%"
           height="54vmin"
         />

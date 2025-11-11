@@ -56,7 +56,8 @@ const SponsorPage = () => (
 
       <VideoContainer>
         <ReactPlayer
-          url="https://www.youtube.com/watch?v=6R0nl--VB6g"
+          src="https://www.youtube.com/watch?v=6R0nl--VB6g"
+          controls={true}
           width="100%"
           height="54vmin"
         />

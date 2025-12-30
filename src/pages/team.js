@@ -60,7 +60,7 @@ const TeamPage = () => (
 
       <CardContainer>
         <Card name="Neil Palachuk" title="Head Coach" />
-        <Card name="Stephen Knoefler" title="Assistant Coach" />
+        <Card name="Lissette Wilhelm" title="Assistant Coach" />
       </CardContainer>
     </TitledCard>
 
@@ -72,8 +72,7 @@ const TeamPage = () => (
       />
 
       <CardContainer>
-        <Card name="Nolan Brown" title="Programming" />
-        <Card name="Lissette Wilhelm" />
+        <Card name="Nolan Brown" />
         <Card name="David Vanderveen" />
       </CardContainer>
     </TitledCard>

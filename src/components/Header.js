@@ -12,7 +12,7 @@ const Header = () => {
           <Link to="/">
             <img src={Logo} alt="Otter Chaos Logo" />
           </Link>
-          <Link to="/robots">Robots</Link>
+          <Link to="/history">History</Link>
           <Link to="/sponsor">Sponsor</Link>
           <Link to="/team">Team</Link>
         </Container>

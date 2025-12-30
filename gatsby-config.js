@@ -3,6 +3,7 @@ module.exports = {
     title: `Otter Chaos - FRC 4512`,
     description: `Learning and striving for better STEAM through high school robotics.`,
     author: `@otterchaos4512`,
+    siteUrl: `https://otterchaos4512.com/`,
   },
   flags: {
     DEV_SSR: true,

@@ -16,17 +16,17 @@ import Dugg2 from "../images/graphics/dugg2.png"
 import Riptide from "../images/graphics/riptide.png"
 import Riptide2 from "../images/graphics/riptide2.png"
 
-const RobotsPage = () => (
+const HistoryPage = () => (
   <Layout>
     {/* SEO */}
-    <SEO title="Robots" />
+    <SEO title="History" />
 
     {/* Header */}
     <Header />
 
     {/* Title */}
     <Hero>
-      <h1>Robots</h1>
+      <h1>History</h1>
       <p>
         Check out what we're up to on
         <a href="https://www.youtube.com/@OtterChaos/featured"> youtube</a>, and see
@@ -91,7 +91,7 @@ const RobotsPage = () => (
   </Layout>
 )
 
-export default RobotsPage
+export default HistoryPage
 
 const EnterAnimation = keyframes`
     from {
